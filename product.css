@@ -100,6 +100,7 @@ input[type="submit"] {
     
      input {
         display: inline;
+        min-width: 300px;
        
       margin: 15px;
         height: 2em;
@@ -107,4 +108,3 @@ input[type="submit"] {
         background-color: #3b3b4f;
         border-color: white;
         }
-        min-width: 300px;
