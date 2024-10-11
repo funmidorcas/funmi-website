@@ -1,0 +1,51 @@
+body{background: linear-gradient(to bottom, rgb(204, 229, 255), rgba(204, 229, 255, 0.4));
+    color: purple;}
+    a:visited{ color: rgb(44, 51, 44); }
+    a:hover, a:active{color: #e75757;
+    
+    }
+    h1{font-size: 2em;
+        color:rgb(204, 229, 255);
+        text-align: start;
+        background: rgb(97, 97, 134);
+        width: full;
+        padding: 20px 30px;
+        margin: 4px 4px;
+
+    }
+    ul{display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    color: blue;}
+
+    li{ 
+        list-style: none;
+     }
+
+     #pictures { width: 380px;
+    height: 300px;
+    padding: 20px 30px;
+    margin: 4px 4px;
+    border: 2px solid rgb(122, 24, 24);
+    font-size: 25px;
+    flex-direction: row;
+justify-content: space-evenly;
+display: flex;
+}
+.caption{
+    font-size: 2em;
+    color:rgb(204, 229, 255);
+    text-align: center;
+    background: rgb(19, 19, 54);
+    width: 380px;
+    padding: 20px 30px;
+    margin: 4px 4px;
+}
+#product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto; 
+    margin-bottom: 6rem;}

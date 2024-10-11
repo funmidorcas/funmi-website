@@ -1,0 +1,110 @@
+body{
+    background: #e1e1e7;
+    font-family: sans-serif;
+  color: rgb(240, 237, 234);}
+  a:visited{ color: rgb(44, 51, 44); }
+    a:hover, a:active{color: #e75757;
+    
+}
+#header {
+    background: black;
+    width: full;
+    height: 50px;
+    color: azure;
+    font-size: 35px;
+}
+#list {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    color: blue;
+}
+li {list-style: none;
+}
+.note {
+    text-align: right;
+    color: blue;
+}
+
+.product {display: flex; 
+    flex-direction: row;
+    width: 200px;
+}
+
+img, figcaption {
+display: flex;
+border: 1px solid black;
+margin: 15px; 
+border-radius: 2px;
+
+}
+figcaption {
+    width: 200px;
+    height: 35px;
+   font-size: 1em;
+    color:rgb(204, 229, 255);
+    justify-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.price{
+    width:100px;
+    color: rgb(24, 22, 22);
+    display: flex;
+    margin: 15px;
+
+}
+
+#product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto; 
+    margin-bottom: 6rem;
+}
+input[type="file"] {
+    padding: 1px 2px;
+    width: 25%;
+}
+input[type="submit"] {
+    width: 3%;
+    background: rgb(125, 145, 135);
+   font-size: 1.1em;
+}
+  
+
+    button{
+        width: 15%;
+        background: purple;
+       margin: 20px;
+
+    }
+    address{
+        font-size: 2em;
+    }
+    #updates{
+        background: rgb(95, 95, 116);
+    }
+        
+    
+    h2, p, h4{
+       margin: 15px;
+        color:rgb(35, 204, 204);
+    
+    }
+    h4{
+       padding-top: 20px;
+    }
+    
+     input {
+        display: inline;
+       
+      margin: 15px;
+        height: 2em;
+        font-size: 1.1rem;
+        background-color: #3b3b4f;
+        border-color: white;
+        }
+        min-width: 300px;
