@@ -18,14 +18,25 @@ html {
     margin: 50px 20px; 
     padding: 5px;
 border-radius: 22px;
-align-items: center;
+justify-content: space-between;
   }
-
+  .whatsapp{
+    background: green;
+  }
   .header{
     text-align: center;
   
   }
-  
+  #title{
+    color: rgba(20, 190, 212, 0.87);
+    background: rgb(41, 41, 66);
+    text-align: start;
+   padding-top: 5px;
+   margin-left: 5px;
+   margin-top: 20px;
+    width: full;
+    height: 10%;
+  }
 img, figcaption {
   display: flex;
   border: 1px solid black;
@@ -47,14 +58,24 @@ figcaption {
 
   select{
     border: none;
-  
-  }
+   }
+   #sale{
+    height: 25%;
+    background:rgba(20, 190, 212, 0.87);
+}
+.out{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+}
   h1 {
     color: black;
     font-size: 35px;
     text-align: center;
   }
-  
+  .note{
+    text-align: end;
+  }
 input[type="submit"] {
   width: 15%;
   background: rgb(125, 145, 135);
@@ -68,7 +89,34 @@ input[type="submit"] {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto; 
-  margin-bottom: 6rem;}
+  margin-bottom: 6rem;
+  background: rgb(91, 107, 66)}
+
   .product{ display: flex;
     flex-direction: row;
-justify-content: center;}
+justify-content: center;
+}
+
+li{
+  list-style: none;}
+#list{
+  display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    color: blue;
+    margin-top: 25px;
+}
+#shoe{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto; 
+  margin-bottom: 6rem;
+  background: rgb(99, 139, 33)}
+  #slippers{
+   
+    color: green;
+    height: 0px;
+  }
