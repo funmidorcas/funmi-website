@@ -17,7 +17,7 @@ body{
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    color: blue;
+  
 }
 li {list-style: none;
 }
@@ -25,11 +25,9 @@ li {list-style: none;
     text-align: right;
     color: blue;
 }
-
-.product {display: flex; 
+.product{ display: flex;
     flex-direction: row;
-    width: 200px;
-}
+justify-content: center;}
 
 img, figcaption {
 display: flex;
@@ -39,14 +37,14 @@ border-radius: 2px;
 
 }
 figcaption {
-    width: 200px;
+    width: 100px;
     height: 35px;
    font-size: 1em;
     color:rgb(204, 229, 255);
     justify-content: center;
     padding-top: 7px;
-    padding-bottom: 7px;
-}
+    padding-bottom: 7px;}
+
 .price{
     width:100px;
     color: rgb(24, 22, 22);
@@ -54,16 +52,22 @@ figcaption {
     margin: 15px;
 
 }
-
+#updates{
+    background: rgb(95, 95, 116);}
 #product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto; 
-    margin-bottom: 6rem;
+    background: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
 }
+ 
+  .product{
+    height: calc(100% -4.8rem);
+    width: 100px;
+    object-fit: cover;
+  }
+
 input[type="file"] {
     padding: 1px 2px;
     width: 25%;
@@ -82,16 +86,16 @@ input[type="submit"] {
 
     }
     address{
-        font-size: 2em;
+        font-size: 3em;
     }
     #updates{
-        background: rgb(95, 95, 116);
+        background: rgb(5, 5, 54);
     }
         
     
     h2, p, h4{
        margin: 15px;
-        color:rgb(35, 204, 204);
+        color: black;
     
     }
     h4{
@@ -101,10 +105,7 @@ input[type="submit"] {
      input {
         display: block;
         min-width: 300px;
-       
-      margin: 15px;
+        margin: 15px;
         height: 2em;
         font-size: 1.1rem;
-        background-color: #3b3b4f;
-        border-color: white;
-        }
+        background-color: rgb(170, 37, 37);}
