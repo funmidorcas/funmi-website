@@ -30,7 +30,7 @@ label{
     margin-top: 10px;
 }
 .name{
-    width:400px;
+    width:250px;
     height:30px;
     background: #555;
     border: none;
@@ -39,7 +39,7 @@ label{
     margin-top: 10px;
 }
 .gender-list{
-    width:400px;
+    width:250px;
     height:30px;
     background: #555;
     border: none;
@@ -50,7 +50,7 @@ label{
  
 }
 .country-list{
-    width:400px;
+    width:250px;
     height:30px;
     background: #555;
     border: none;
@@ -68,7 +68,7 @@ label{
 margin: 20px;
 }
 #informat{
-width: 400px;
+width: 250px;
 height: 100px;
 padding: 10px;
 
@@ -83,11 +83,16 @@ margin-bottom: 20px;
 }
 @media(max-width: 700px){
    .head{
-width: 400px;
+width: 250px;
 
 font-size: 1.9em;
 padding-bottom: px;
 }
-    
+    body{
+        max-width: 300px;
+    }
+    .par{
+        font-size:0.7em;
+    }
     }
     
