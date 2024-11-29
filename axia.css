@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: linear-gradient(to left, #555, #045fb4);
+
+}
+.head{
+    background: #6e3b3b;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+.par{
+    margin-top: -20px;
+    margin-left: 20px;
+color: #da7c7c;
+
+}
+.filled{
+    display: grid;
+    margin: 20px;
+}
+label{
+    margin-top: 10px;
+}
+.name{
+    width:400px;
+    height:30px;
+    background: #555;
+    border: none;
+}
+.select{
+    margin-top: 10px;
+}
+.gender-list{
+    width:400px;
+    height:30px;
+    background: #555;
+    border: none;
+    
+}
+.country{
+    margin-top: 10px;
+ 
+}
+.country-list{
+    width:400px;
+    height:30px;
+    background: #555;
+    border: none;
+
+}
+.second{
+    margin: 20px;
+    display: grid;
+}
+.about{
+    margin: 20px;
+    display: grid;
+}
+.info{
+margin: 20px;
+}
+#informat{
+width: 400px;
+height: 100px;
+padding: 10px;
+
+}
+.submit{
+    width: 100px;
+margin-left: 200px;
+font-size: 1.6em;
+border: none;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+@media(max-width: 700px){
+   .head{
+width: 400px;
+
+font-size: 1.9em;
+padding-bottom: px;
+}
+    
+    }
+    

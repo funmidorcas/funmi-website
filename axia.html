@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axia Registration Form</title>
+    <link rel="stylesheet" href="axia.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="head">Axia Africa Registration</h1>
+    <p class="par">please fill the form below to get on the Axia training</p>
+    </div>
+
+    <section class="filled">
+<label for="name">First Name
+</label>
+<input type="text" for="name" class="name" placeholder="Enter your first name">
+
+<label for="name">Last Name
+</label>
+<input type="text" for="name" class="name" placeholder="Enter your last name">
+
+<div class="select">
+<legend>Gender</legend>
+    <select
+        class="gender-list"
+        name="gender"
+        id="gender-lists"
+    >
+        <option selected>Select an option</option>
+        <option value="">Male</option>
+        <option value="">Female</option>
+        <option value="">Prefer not to say</option>
+    </select>
+</div>
+
+<label for="age">Age(optional)
+</label>
+<input type="date"  class="name">
+
+
+
+<div class="country">
+
+    <legend>Select your country</legend>
+    <select
+        class="country-list"
+        name=""
+        id=""
+    >
+        <option selected>Select one</option>
+        <option value="">Nigeria</option>
+        <option value="">Ghana</option>
+        <option value="">South Africa</option>
+        <option value="">Liberia</option>
+        <option value="">Tanzania</option>
+        <option value="">Others</option>
+
+    </select>
+</div>
+</section>
+
+
+
+<section class="second">
+    <legend class="delivery">Do you have a laptop?</legend>
+    <label for="yes"><input id="yes" type="radio" name="account-type" class="inline" checked />Yes</label>
+    <label for="no"><input id="no" type="radio" name="account-type" class="inline" />No</label>
+</section>
+<div class="about">
+    <legend required>How did you hear about Axia Africa?</legend>
+ <label for="google"><input id="google" type="checkbox" name="account-type" class="inline" />Google</label>
+ <label for="yes"><input  type="checkbox" name="account-type" class="inline" checked />Yes</label>
+ <label for="yes"><input  type="checkbox" name="account-type" class="inline" checked />Yes</label>
+ <label for="yes"><input  type="checkbox" name="account-type" class="inline" checked />Yes</label>
+ <label for="yes"><input  type="checkbox" name="account-type" class="inline" checked />Yes</label>
+ <label for="yes"><input  type="checkbox" name="account-type" class="inline" checked />Yes</label>
+ <label for="yes"><input  type="checkbox" name="account-type" class="inline" checked />Yes</label>
+
+</div>
+<div class="info">
+    <legend>Tell us about yourself?</legend>
+    <textarea name="comment" id="informat">type here</textarea>
+</div>
+<button type="submit" class="submit">submit</button>
+<script src="axia.js"></script>
+</body>
+</html>
