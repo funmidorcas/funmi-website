@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{color: black;
+
+max-width: 400px;
+font-family: "Poppins", serif;
+}
+img{
+    width: 400px;
+}
+.hed{
+    transform: translateY(-100px);
+    background: white;
+    border: none;
+    border-radius: 10px;
+
+}
+.header{
+gap: 10px;
+    display: flex;
+width: 500px;
+padding: 20px;
+}
+.star{
+    margin-top: 40px;
+    color: blue;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+padding: 20px;
+}
+.plus{
+    color: blue;
+
+}
+.minus{
+    color: blue;
+
+}
+.note1{
+    padding: 30px;
+    
+}
+hr{
+    margin-left: 20px;
+
+}
