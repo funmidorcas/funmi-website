@@ -42,13 +42,23 @@ li{
     border: none;
     border-radius: 50px;
 }
+.checked{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
 button{
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 80px;
     margin-top: 30px;
+
 }
+
 .home-container{
 margin-left: 450px;
     padding-bottom: 50px;
@@ -141,7 +151,25 @@ justify-content: center;
 gap: 40px;
 }
 
-@media screen and (max-width: 600px) {
+.us{
+    animation: button 5s ease -2s infinite normal;
+}
+
+@keyframes button {
+    from 0%,
+    20%,
+    50%, 
+    80%,
+    100%{
+    transform: translateY(0px);
+}
+        40%{
+            transform: translateY(-10px);
+        }
+    }
+
+
+@media screen and (max-width: 500px) {
     .container {
         display: flex;
         flex-direction: row;
@@ -214,3 +242,83 @@ gap: 40px;
     }
 
 }
+
+
+.bar{
+    height: 60px;
+    background: burlywood;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.bar .set{
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:aqua;
+}
+.bar .set:hover{
+    background: red;
+
+}
+.bar .home{margin-right: auto;
+
+}
+.bar .icon{
+    fill:blue;
+}
+#sidebar-active{
+    display: none;
+}
+.open, .close{
+    display: none;
+}
+@media (max-width: 500px) {
+    .links{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top:0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background: rgb(38, 126, 97);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out;
+
+    }
+    .bar .set{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;    }
+.open, .close{
+    padding:  20px;
+    display: block;
+
+}
+#sidebar-active:checked ~ .links{
+    /* display: flex; */
+    right: 0;
+}
+#sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    Z-index: 9;
+}
+    }
+
