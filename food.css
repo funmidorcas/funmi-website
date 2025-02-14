@@ -167,7 +167,14 @@ gap: 40px;
             transform: translateY(-10px);
         }
     }
+.show{
+    margin: 5px;
+    text-transform: lowercase;
+    display: none;
+    color:rgb(17, 163, 114);
 
+
+}
 
 @media screen and (max-width: 500px) {
     .container {
@@ -302,16 +309,23 @@ gap: 40px;
         height: auto;
         width: 100%;
         padding: 20px 30px;
-        justify-content: flex-start;    }
+        justify-content: flex-start;   
+     }
 .open, .close{
     padding:  20px;
     display: block;
 
 }
+.show{
+    display: inline-block;
+    color: black;
+    text-transform: lowercase;
+}
 #sidebar-active:checked ~ .links{
     /* display: flex; */
     right: 0;
 }
+
 #sidebar-active:checked ~ #overlay{
     height: 100%;
     width: 100%;
@@ -321,4 +335,3 @@ gap: 40px;
     Z-index: 9;
 }
     }
-
