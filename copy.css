@@ -6,11 +6,11 @@
 
 body{color: black;
 
-max-width: 250px;
+max-width: 480px;
 font-family: "Poppins", serif;
 }
 img{
-    width: 250px;
+    width: 480px;
 }
 .hed{
     transform: translateY(-100px);
@@ -22,7 +22,7 @@ img{
 .header{
 gap: 10px;
     display: flex;
-width: 250px;
+width: 300px;
 padding: 20px;
 }
 .star{
