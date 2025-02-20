@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.nav-div{
+     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 20px;
+    margin-top: 5px;
+}
+ul{
+    display: flex;
+    gap: 40px;
+    transform: translateX(-120px);
+    aspect-ratio: inherit;
+    margin-top: 13px;
+
+}
+li{
+    list-style: none;
+}
+.second{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 20px;
+    /* aspect-ratio: 1; */
+}
+.log{
+    margin-top: 13px;
+}
+.img{width: 40px;
+height: 40px; 
+border-radius: 50px;
+/* aspect-ratio: inherit;
+object-fit: cover; */
+}
+
+.container{
+    display: flex;
+    margin: 30px;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+.contain-pic{
+    width: 70%;
+
+}
+.contain-pic img{
+    width: 100%;
+    bottom: none;
+    border-radius: 10px;
+}
+.pic-set{
+    width: 15%;
+    display: flex;
+    gap: 19px;
+    position: relative;
+    top: 10px;
+
+}
+.pic-set img{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+  
+}
+
+.container2{
+    display: inline-block;
+    transform: translateY(50px);
+}
+.head{
+    font-weight: 200;
+    color: rgb(58, 58, 143);
+    margin-bottom: 10px;
+
+}
+.fall{
+    /* word-wrap: break-word; */
+    width: 300px;
+    margin-bottom: 30px;
+}
+.note{
+    color: rgba(58, 58, 143, 0.5);
+    font-size: 0.8em;
+    /* opacity: 0.6; */
+    margin-bottom: 10px;
+    width: 300px;
+
+}
+.percent{
+display: flex;
+gap: 15px;
+margin-bottom: 10px;
+}
+.price{
+font-weight: bolder;
+}
+.five{
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    background: rgb(8, 8, 53);
+    color: #fff;
+}
+.price2{
+text-decoration: line-through;
+margin-bottom: 10px;
+font-size: 0.8rem;
+
+}
+.holder{
+    display: flex;
+    gap: 10px;
+}
+.add{
+    display: flex;
+    background: rgb(231, 234, 235);
+    width: 100px;
+    justify-content: space-evenly;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.add button{
+    border: none;
+    background: rgb(231, 234, 235);
+    color: orange;
+
+}
+.add p{
+    color: rgb(9, 9, 63);
+}
+.cart{
+    background: orange;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+width: 150px;
+display: flex;
+gap: 10px;
+justify-content: center;
+}
+.last{
+    font-size: 0.7em;
+    margin-top: 5px;
+
+}
+.to{
+    background: orange;
+    border: none;
+    font-size: 0.7em;
+
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .nav-div {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 5px;
+        transform: translateX(0);
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .second {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .log {
+        margin-top: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .contain-pic {
+        width: 80%;
+    }
+
+    .pic-set {
+        width: 11%;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: start;
+        /* display: none; */
+    }
+
+    .container2 {
+        transform: translateY(20px);
+        text-align: start;
+    }
+
+    .fall,
+    .note, .head {
+        width: 100%;
+        /* text-align: start; */
+
+    }
+
+    .percent {
+        justify-content: start;
+    }
+    .percent2{
+        display: flex;
+        gap: 100px;
+    }
+
+    .holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add {
+        width: 80%;
+        justify-content: space-around;
+    }
+
+    .cart {
+        width: 80%;
+        justify-content: center;
+    }
+}
