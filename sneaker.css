@@ -207,7 +207,7 @@ justify-content: center;
     }
 
     .pic-set {
-        width: 11%;
+        width: 15%;
         flex-direction: row;
         gap: 10px;
         justify-content: start;
