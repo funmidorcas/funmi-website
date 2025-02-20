@@ -202,16 +202,18 @@ justify-content: center;
         align-items: center;
         padding: 15px;
         margin: 10px;
+        /* position: relative;
+        left:100px;
+        right: 100px; */
+    }
+
+    .contain-pic {
+        width: 80%;
     }
 .hold{
     position: relative;
     left: 10px;
 }
-
-    .contain-pic {
-        width: 80%;
-    }
-
     .pic-set {
         width: 15%;
         flex-direction: row;
