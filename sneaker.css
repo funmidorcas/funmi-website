@@ -178,7 +178,9 @@ justify-content: center;
         font-size: 0.7em;
         width: 100%;
     }
-
+body{
+    width: 100%;
+}
     ul {
         flex-direction: row;
         gap: 5px;
