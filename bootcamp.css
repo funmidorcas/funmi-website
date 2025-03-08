@@ -7,6 +7,8 @@ padding: 0;
 
 .header{
 display: flex;
+flex-wrap: wrap;
+
 padding: 20px;
 background: rgb(99, 99, 146);
 }
@@ -50,6 +52,7 @@ a{
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 10px;
     background: #666;

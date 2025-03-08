@@ -1,0 +1,163 @@
+body{
+    background: green;
+
+    font-family: sans-serif;
+
+}
+img{
+    margin: 10px;
+
+    border:none;
+border-radius: 10px;
+
+}
+.upper{
+    display: flex;
+    margin: 10px;
+    border:none;
+    border-radius: 10px;
+    background: white;
+}
+.icon{
+    justify-content: space-evenly;
+    margin: 10px;
+    border:none;
+    border-radius: 10px;
+background: red;   
+margin-left: 200px; 
+}
+
+.text{
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+
+}
+.video{
+    margin: 10px;
+    border: 3px;
+}
+iframe{
+    border:none;
+    border-radius: 10px;
+}
+.fa-solid{
+    margin: 20px;
+
+}
+section{
+margin-top: 30px;
+padding: 5px;
+border:none;
+border-radius: 10px;
+background: #ffff;
+}
+.header{
+    display:flex;
+    justify-content: flex-end;
+    color: rgb(119, 103, 103);
+    margin: 10px;
+    background: #555;
+}
+ul{
+    display: flex;
+    list-style: none;
+
+}
+.social{
+    margin: 10px;
+
+}
+.fa-brands{
+    margin: 10px;
+    font-size: 1.5em;
+}
+li{
+    margin: 10px;
+}
+.plenty{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+.image{
+    background-image:url(img/cafeteria.png);
+    width: 500px;
+    height: 200px;
+
+
+}
+.box{
+    background: #fff;
+    width: 300px;
+    height: 170px;
+    margin: 10px;
+
+}
+
+.box1{
+    background: #221717;
+    width: 300px;
+    height: 200px;
+    transition: transform o.5;
+
+}
+   
+    .box1:hover{transform: translateY(-5px);
+
+}
+.text2{
+text-align: center;
+}
+h5{
+    text-align: center;
+
+}
+.header1{display:flex;
+    justify-content: flex-end;
+    color: rgb(1, 2, 17);
+background: #221717;
+}
+
+.service-image{
+    background-image:url(img/download.jpeg);
+    width: auto;
+    height: 500px;
+}
+.new{
+    text-align: center;
+}
+.new1{
+    margin-bottom:10px;
+    margin-top: 100px;
+
+}
+.new, .link{
+    margin-bottom:50px;
+
+}
+
+.new2{
+margin-top: 3px;
+padding: 10px;
+
+
+}
+.link{
+   color: black;
+   background: blue;
+   border-radius: 10px;
+   font-size: 1.5em;
+   text-decoration: none;
+   padding: 15px;
+
+}
+
+.flow{
+    display: flex;
+    width: 600px;
+    height: 200px;
+padding: 50px;
+background: #fff;
+margin-left: 300px;}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(138, 138, 226);
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.topic{
+    margin: 50px;
+}
+.header-list{
+    margin: 50px;
+}
+.a-list{
+    margin: 10px;
+font-size: 1.2em;
+}
+.first{
+    margin: 10px;
+    font-family: sans-serif;
+    text-align: center;
+
+
+}
+h1{
+    text-align: center;
+}
+.second{
+    margin: 10px;
+    font-family: sans-serif;
+
+}
+.third{
+    margin: 10px;
+    font-family: sans-serif;
+
+}
+
+.forth{
+    margin: 10px;
+    font-family: sans-serif;
+
+}

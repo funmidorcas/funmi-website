@@ -82,9 +82,12 @@
     <footer>
       <form id="myForm">
         <div id="contact">
-          <h3>Contact Me</h3>
+          <div class="form-body">
+          <h3>Sign Up Form</h3>
           <div class="info-2">
+<p>Enter your details:</p>
             <p>
+
               <label for="firstName">First Name:</label>
               <input type="text" name="firstName" id="firstName" placeholder="Janet" required />
             </p>
@@ -97,13 +100,23 @@
               <input
                 type="email" name="email" id="email" placeholder="abc@gmail.com" require/>
             </p>
+            <p>
+              <label for="age">Age:</label>
+              <input
+                type="number" name="age" id="age"  require/>
+  
+            </p>
           </div>
           <legend>Send Me A Message:</legend>
           <textarea name="message" id="message" cols="20" rows="10" placeholder="Type your message here"></textarea>
           <br />
           <button type="submit" class="submit">Submit</button>
         </div>
+        </div>
       </form>
+      <section>
+        <ul id="result-view"></ul>
+      </section>
     </footer>
     <script src="ass1.js"></script>
   </body>

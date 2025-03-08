@@ -1,0 +1,83 @@
+/* h2{
+    color: red;
+}
+
+.pics{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    width: 500px;
+    height:50vh;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(black, transparent);
+   mask-image: linear-gradient(black, transparent);
+} */
+
+
+/* .card-outer{
+    inline-size: max(20rem, 40vh);
+    aspect-ratio: 1;
+    margin-inline: auto;
+    border:1px solid currentColor;
+    padding: 5px;
+}
+.card{
+    position: relative;
+    inline-size: 100%;
+    block-size: 100%;
+    background: linear-gradient(to right, #90c3fd, #ba71ff, #ff71b8);
+
+mask-image: url(https://pngimg.com/d/face_PNG5645.png);
+
+
+mask-position: 20px 30px;
+mask-position: bottom right;
+mask-position: bottom;
+mask-position: center;
+ 
+ mask-size: 50%;
+mask-size: 50% 25%;
+mask-size: 50% auto;
+ mask-repeat: repeat-x;
+ mask-repeat: repeat-y; 
+
+
+}
+ */
+
+/* Basic styling for the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+/* Applying mask image properties */
+.masked-image {
+    width: 400px;
+    height: 400px;
+    /* background: url('https://via.placeholder.com/400') no-repeat center/cover; */
+    
+    /* Mask image with a radial gradient */
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    
+    /* Mask size */
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    
+    /* Mask position */
+    -webkit-mask-position: center;
+    mask-position: center;
+    
+    /* Mask repeat */
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    
+    /* Mask mode (alpha or luminance) */
+    -webkit-mask-composite: destination-in;
+    mask-composite: exclude;
+}
