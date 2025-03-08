@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+margin: 80px 350px;
+background: linear-gradient(to right, #b96868, #fff);
+}
+.container{
+    background: white;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+}
+img{
+    border: none;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    height: 200px;
+width: 400px;
+}
+.level1, .head{
+    margin-bottom: 15px;
+
+}
+.head{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.level2{
+    background: #725858;
+    padding: 35px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.head2{
+    margin-left: -20px;
+    margin-bottom: 5px;
+
+}
+h3{
+    color:chocolate;
+    font-weight: 900;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transform: translateX(-23px);
+
+}
+.level3{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 40px;
+    margin-left: 5px;
+
+}
+.level4{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 40px;
+    margin-left: 5px;
+
+}
+.level5{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 40px;
+    margin-left: 5px;
+
+}
+.level5 > p{
+    padding-bottom: 20px;
+    transform: translateX(-23px);
+
+}
+p{
+    line-height: 30px;
+}
+.level4 li{
+    list-style-type: digits;
+    list-style-position: inherit;
+}
+
+li{
+    line-height: 30px;
+    padding-left: 10px;
+
+}
+.table{
+    border-collapse: collapse;
+    /* margin: 25px 0; */
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+
+
+}
+td{
+    /* background-color: #b94343; */
+    color: rgb(199, 18, 18);
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 150px;
+
+}
+tr{
+    transform: translateX(30px);
+    color:rgb(115, 122, 128);
+    font-style: inherit;
+    font-size: small;
+    font-weight: 100;
+}
+thead{
+    line-height: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-bottom: 0.5px solid #dddddd;
+    overflow: hidden;
+}

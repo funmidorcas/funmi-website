@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenge 2.0</title>
+    <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="task.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #chart-container {
+            width: 80px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="total">
+        <div class="first-line">
+            <div class="create">
+                <h2 class="content">Create and <br>schedule <br>content <br><span>quicker.</span></h2>
+                <button class="post">Create Post <i class="fa-solid fa-star pos"></i>
+                </button> <br>
+                <i class="fa-solid fa-arrow-up-right-dots arrow"></i>
+            </div>
+            <div class="social">
+                <h2 class="media">Social Media <strong>10x </strong><br><span>Faster </span>with <strong>AI</strong></h2>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p class="over">Over 4,000 5-star reviews</p>
+            </div>
+            <div class="schedule">
+                <h3 class="last">Schedule to social media.</h3>
+                <div class="bar">
+                  <h6 class="best">Best Time to Post</h6>
+               <hr>
+                    <div id="chart-container">
+                    <canvas id="columnChart"></canvas>
+                </div>    
+            
+    <script>
+        const ctx = document.getElementById('columnChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri'],
+                datasets: [{
+                    label: '',
+                    data: [10, 25, 15, 30, 20],
+                    backgroundColor: 'blue',
+                }]
+            },
+            options: {
+                responsive: false,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: ''
+                        }
+                    },
+                    y: {
+                        display: false
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Days of the Week'
+                    }
+                }
+            }
+        });
+    </script>
+</div>
+<br><br><br><br>
+<p class="last bar-note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Solution</p>
+</div>
+</div>
+
+<div class="second-phase">
+        <h1 class="write">Write your <br>content <br>using <strong>AI.</strong></h1>
+<div class="small">
+    <div class="smallest">
+    <p class="give">Give me a 5 tips to growth my follower on instagram</p>
+    <i class="fa-solid fa-head-side-mask mask"></i></div>
+<div class="smaller">
+    <i class="fa-solid fa-star hat"></i>
+    <p class="cert">Certainly!Hey <br>Do you want <br>to grow your <br>instagram..</p>
+<div class="space">
+        <i class="fa-solid fa-arrow-up up"></i>
+</div>
+</div>
+</div>
+    </div>
+
+
+
+</div>
+<script src="eni.js"></script>
+</body>
+</html>
