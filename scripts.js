@@ -55,32 +55,79 @@ remove1Point()
 remove1Point()
 console.log(myPoint)
 
+// sytem given number only
+// let num1 = 8
+// let num2 = 2
+//  document.getElementById("num1").textContent
+//   document.getElementById("num2").textContent
+//  document.getElementById("sum")
+// function add(){
+  
+//     let result = num1 + num2
+// sum.textContent = "Answer = " + result
+// }
 
-let num1 = 8
-let num2 = 2
+//  function subtract(){
+//     let result = num1 - num2
+// sum.textContent = "Answer = " + result
+// }
+//  function divide() {
+//     let result = num1 / num2
+// sum.textContent = "Answer = " + result
+//  }
+//   function multiply() {
+//     let result = num1 * num2
+// sum.textContent = "Answer = " + result
+//   }
 
-document.getElementById("num1").textContent = 8 
-document.getElementById("num2").textContent = 2 
-let sum = document.getElementById("sum")
 
-function add(){
-    let result = num1 + num2
-sum.textContent = "Answer = " + result
+// for user to input number
+function add() {
+  let num1 = document.getElementById("num1");
+  let num2 = document.getElementById("num2");
+  let sum = document.getElementById("sum");
+
+  let result = parseFloat(num1.value) + parseFloat(num2.value);
+  sum.textContent = "Answer = " + result;
+
+  num1.value = "";
+  num2.value = "";
 }
- function subtract(){
-    let result = num1 - num2
-sum.textContent = "Answer = " + result
 
- }
- function divide() {
-    let result = num1 / num2
-sum.textContent = "Answer = " + result
- }
-  function multiply() {
-    let result = num1 * num2
-sum.textContent = "Answer = " + result
-  }
+function subtract() {
+  let num1 = document.getElementById("num1");
+  let num2 = document.getElementById("num2");
+  let sum = document.getElementById("sum");
 
+  let result = parseFloat(num1.value) - parseFloat(num2.value);
+  sum.textContent = "Answer = " + result;
+
+  // Reset input fields
+  num1.value = "";
+  num2.value = "";
+}
+
+function divide(){
+  let num1 = document.getElementById("num1");
+  let num2 = document.getElementById("num2");
+  let sum = document.getElementById("sum");
+ let result = parseFloat(num1.value) / parseFloat(num2.value)
+ sum.textContent = "Answer = " + result;
+ num1.value = "";
+ num2.value = "";
+
+}
+
+function multiply(){
+  let num1 = document.getElementById("num1");
+  let num2 = document.getElementById("num2");
+  let sum = document.getElementById("sum");
+ let result = parseFloat(num1.value)  * parseFloat(num2.value)
+ sum.textContent = "Answer = " + result;
+ num1.value = "";
+ num2.value = "";
+
+}
 
   // let firstCard = 8
   // let secondCard = 13                          

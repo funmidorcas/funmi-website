@@ -53,18 +53,46 @@
 </div>
 <div class="holder">
 <div class="add">
-    <button class="minus">-</button>
-    <p>0</p>
-    <button class="minus">+</button>
+    <button class="minus" onclick="reduce()">-</button>
+    <span class="number">0</span>
+    <button class="added" onclick="increment()">+</button>
     </div>
-    <div class="cart">
+    <div class="cart" >
         <i class="fa-solid fa-cart-shopping last"></i>
-            <button class="to">  Add to Cart
+            <button class="to" onclick="reset()">  Add to Cart
         </button>
     </div>
+    <p id="note"></p>
+
 </div>
 </div>
 </div>
 
+
+<script>
+const minus = document.getElementsByClassName("minus")
+const added = document.getElementsByClassName("added")
+let counting = document.querySelector(".number");
+let note = document.getElementById("note")
+let count = 0;
+console.log(counting)
+
+function increment(){
+    count = count + 1
+    counting.textContent = count
+}
+ function reduce(){
+     if (count > 0){
+    count = count - 1
+    counting.textContent = count
+ }
+ }
+function reset(){
+    message = "added"
+    note.textContent = message
+  count = 0
+counting.textContent = 0
+}
+</script>
 </body>
 </html>
