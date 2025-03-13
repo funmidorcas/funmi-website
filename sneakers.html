@@ -92,7 +92,10 @@ function reset(){
     note.textContent = message
   count = 0
 counting.textContent = 0
-message =""
+setTimeout(() => {
+        note.textContent = "";
+    }, 1000)
+
 }
 </script>
 </body>
