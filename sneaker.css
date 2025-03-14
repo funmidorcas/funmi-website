@@ -200,7 +200,107 @@ justify-content: center;
 }
 
 
-@media (max-width: 480px) {
+
+@media (max-width: 375px) {
+    body {
+        max-width: 375px;
+        width: 100%;
+    }
+
+    .nav-div {
+        padding: 10px 20px;
+        flex-direction: row;
+    }
+    
+    .bar {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Hide default links, use sidebar instead */
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: rgb(38, 126, 97);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.5s ease-in-out;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    .bar .set {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    .open, .close {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+    }
+
+    #sidebar-active:checked ~ .links {
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 9;
+    }
+
+    /* Adjustments for Small Screens */
+    ul {
+        flex-direction: column;
+        text-align: left;
+        gap: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .contain-pic {
+        width: 100%;
+        display: flex;
+    }
+
+    .pic-set {
+        width: 30%;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .container2 {
+        transform: translateY(10px);
+        text-align: center;
+    }
+
+    .holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add, .cart {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+/* @media (max-width: 480px) {
     .links{
         flex-direction: column;
         align-items: flex-start;
@@ -227,8 +327,8 @@ justify-content: center;
 }
 #sidebar-active:checked ~ .links{
     /* display: flex; */
-    right: 0;
-}
+    /* right: 0; */
+/* } 
 #sidebar-active:checked ~ #overlay{
     height: 100%;
     width: 100%;
@@ -278,7 +378,7 @@ body{
         position: relative;
         left:10px;
         /* right: 5px;  */
-    }
+    /* }
 
     .contain-pic {
         width: 80%;
@@ -297,7 +397,7 @@ body{
         gap: 10px;
         justify-content: start;
         /* display: none; */
-        display: flex;
+        /* display: flex;
         position: relative;
         left: 10px;
 
@@ -309,11 +409,11 @@ body{
     }
 
     .fall,
-    .note, .head {
-        width: 100%;
+    .note, .head { */
+        /* width: 100%; 
         /* text-align: start; */
 
-    }
+    /* }
 
     .percent {
         justify-content: start;
@@ -336,5 +436,5 @@ body{
     .cart {
         width: 80%;
         justify-content: center;
-    }
-}
+    } */
+/* }  */
