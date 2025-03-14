@@ -10,22 +10,34 @@
 <body>
     <div class="nav-div">
         <h1 class="sneaker">Sneakers</h1>
+<nav class="bar">
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open">
+        <i class="fa-solid fa-bars icon"></i>    
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
 
-        <nav>
-
-<ul>
-    <li>Collection</li>
-    <li>men</li>
-    <li>Women</li>
-    <li>About</li>
-    <li>Contact</li>
+    <div class="links">
+        <label for="sidebar-active" class="close">
+            <i class="fa-solid fa-xmark icon"></i>
+        </label>
+        <ul>
+<li><a class="home set" href="">Collection</a></li>
+<li><a class="home set" href="">Men</a></li>
+<li><a class="home set" href="">Women</a></li>
+<li><a class="home set" href="">About Us</a></li>
+<li><a class="home set" href="">Contact</a></li>
 </ul>
-</nav>
-<div class="second">
-    <i class="fa-solid fa-cart-shopping log"></i>
-    <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRtBAhkcO9Fy7UddU5bmgJIn3R90Ad3yzpuI_J90Fw40QsKkg&s" alt="">
-</div>
-</div>
+    </div>
+    </nav>
+
+    <div class="second">
+        <span><p id="top"></p>
+        <i class="fa-solid fa-cart-shopping log"></i></span>
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRtBAhkcO9Fy7UddU5bmgJIn3R90Ad3yzpuI_J90Fw40QsKkg&s" alt="">
+    </div>
+    </div>
+    
 
 <div class="container">
     <div class="hold">
@@ -59,7 +71,7 @@
     </div>
     <div class="cart" >
         <i class="fa-solid fa-cart-shopping last"></i>
-            <button class="to" onclick="reset()">  Add to Cart
+            <button class="to">  Add to Cart
         </button>
     </div>
     <p id="note"></p>
@@ -70,33 +82,43 @@
 
 
 <script>
-const minus = document.getElementsByClassName("minus")
-const added = document.getElementsByClassName("added")
-let counting = document.querySelector(".number");
-let note = document.getElementById("note")
-let count = 0;
-console.log(counting)
 
-function increment(){
+const minus = document.querySelector(".minus")
+const added = document.querySelector(".added")
+const counting = document.querySelector(".number") 
+const note = document.getElementById("note")
+const to = document.querySelector(".to") 
+const cart = document.getElementById("top")
+let count = 0
+let cartTotal = 0
+
+added.addEventListener("click", function(){
     count = count + 1
-    counting.textContent = count
-}
- function reduce(){
-     if (count > 0){
+    counting.textContent = count 
+})
+minus.addEventListener("click", function(){
+if (count > 0){
     count = count - 1
     counting.textContent = count
  }
- }
-function reset(){
+})
+
+to.addEventListener("click", function(){
+
+if( count > 0){
     message = "added"
     note.textContent = message
+     
+     cartTotal += count
+ cart.textContent = cartTotal
+
   count = 0
 counting.textContent = 0
-setTimeout(() => {
-        note.textContent = "";
-    }, 1000)
-
 }
+setTimeout(() => {
+        note.textContent = ""
+    }, 1000)
+})
 </script>
 </body>
 </html>

@@ -11,25 +11,60 @@ body{
     display: flex;
     justify-content: space-around;
     gap: 25px;
-    padding: 20px;
+    padding: 10px;
     margin-top: 5px;
+}
+
+.bar{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.bar .set{
+    height: 100px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:aqua;
+}
+.bar .set:hover{
+    color: rgb(233, 153, 153);
+
+}
+.bar .home{margin-right: auto;
+
+}
+.bar .icon{
+    fill:blue;
+}
+#sidebar-active{
+    display: none;
+}
+.open, .close{
+    display: none;
 }
 ul{
     display: flex;
-    gap: 40px;
-    transform: translateX(-120px);
-    aspect-ratio: inherit;
-    margin-top: 13px;
+     gap: 10px;
+     margin-bottom: 15px;
+} 
 
-}
 li{
     list-style: none;
 }
 .second{
     display: flex;
-    /* justify-content: space-around; */
-    gap: 20px;
-    /* aspect-ratio: 1; */
+    gap: 30px;
 }
 .log{
     margin-top: 13px;
@@ -51,7 +86,6 @@ object-fit: cover; */
 }
 .hold{
     width: 400px;
-    /* border: 2px solid black ; */
 }
 .contain-pic{
     width: 70%;
@@ -89,7 +123,6 @@ object-fit: cover; */
 
 }
 .fall{
-    /* word-wrap: break-word; */
     width: 300px;
     margin-bottom: 30px;
 }
@@ -167,6 +200,44 @@ justify-content: center;
 }
 
 
+@media (max-width: 480px) {
+    .links{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top:0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background: rgb(38, 126, 97);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out;
+
+    }
+    .bar .set{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;    }
+.open, .close{
+    padding:  20px;
+    display: block;
+
+}
+#sidebar-active:checked ~ .links{
+    /* display: flex; */
+    right: 0;
+}
+#sidebar-active:checked ~ #overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    Z-index: 9;
+}
+    } 
 
 
 @media screen and (max-width: 480px){
@@ -182,7 +253,7 @@ body{
     width: 100%;
 }
     ul {
-        flex-direction: row;
+        flex-direction: column;
         gap: 5px;
         transform: translateX(0);
         text-align: center;
@@ -192,7 +263,7 @@ body{
     .second {
         flex-direction: row;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     .log {
@@ -204,9 +275,9 @@ body{
         align-items: center;
         padding: 15px;
         margin: 10px;
-        /* position: relative;
+        position: relative;
         left:10px;
-        right: 5px; */
+        /* right: 5px;  */
     }
 
     .contain-pic {
